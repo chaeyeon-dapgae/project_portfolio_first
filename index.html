@@ -1,11 +1,972 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>신입 퍼블리셔 Chaeyeon's 포트폴리오</title>
+    <link rel="icon" href="img/chaeyeon.png" />
+    <!-- ##### CSS ##### -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- ##### JS ##### -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- ##### UIKit CDN ##### -->
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.18.0/dist/css/uikit.min.css"
+    />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.0/dist/js/uikit-icons.min.js"></script>
+    <!-- featherlight CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <!-- featherlight JS -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+  </head>
+  <body>
+    <body>
+      <div class="chaeyeonWrap">
+        <!-- ########## Home ########## -->
+        <div class="homeWrap">
+          <div class="home">
+            <h1>채연답게</h1>
+            <input type="radio" id="aboutWrap" name="homechk" checked />
+            <input type="radio" id="skillWrap" name="homechk" />
+            <input type="radio" id="portfolioWrap" name="homechk" />
+            <div class="btnChk">
+              <label for="aboutWrap" data-alt="aboutWrap">about me</label>
+              <label for="skillWrap" data-alt="skillWrap">skill</label>
+              <label for="portfolioWrap" data-alt="portfolioWrap"
+                >portfolio</label
+              >
+            </div>
+            <div class="text">
+              <div>
+                <p>
+                  일관성 있는 깔끔한 문서구조를 지향하고 있습니다.
+                  <br /><br />끈기가 있고 꼼꼼한 성격에 지인들에게 '역시
+                  채연이답다'라는 말을 종종 듣곤 했습니다.<br />앞으로도
+                  유채연답게 포기하지 않고 꾸준히 노력하며 성실하고 책임감있는
+                  퍼블리셔가 되겠습니다.
+                </p>
+              </div>
+              <div>
+                <p>
+                  온라인 강의로 독학을 하면서 만들었던 파일들입니다
+                  <br />학원에 다녔을 땐 무작정 따라 입력하고, 외워서
+                  입력했습니다. 독학을 하면서 학원에서 배우지 못했던, 이해하지
+                  못했던 부분들을 채워나가고 있습니다.
+                </p>
+              </div>
+              <div>
+                <p>
+                  학원 강의를 들으며 처음으로 만들어본 프로젝트가 IKEA
+                  였습니다.다시 열어본 IKEA는 부족한 부분이 보여 처음부터 다시
+                  작성을 하게 되었고, float나 flex grid 같은 정렬을 연습하며
+                  다른 프로젝트를 완성했습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="btnClick"><i class="xi-angle-left-min"></i></div>
+        </div>
+        <!-- ########## About me ########## -->
+        <div class="lnb aboutWrap focus">
+          <div class="about">
+            <div class="btnChk">
+              <label for="aboutWrap" data-alt="aboutWrap">about me</label>
+              <label for="skillWrap" data-alt="skillWrap">skill</label>
+              <label for="portfolioWrap" data-alt="portfolioWrap"
+                >portfolio</label
+              >
+            </div>
+            <header>
+              <h2>1. 포기하지 않는</h2>
+              <h2>2. 꾸준한</h2>
+              <h2>3. 끈기있는</h2>
+              <div class="chaeyeon">
+                <h4>
+                  안녕하세요!
+                  <span>신입 퍼블리셔</span>
+                  <em>유채연</em>입니다!
+                </h4>
+                <img src="img/chaeyeon.svg" alt="유채연 캐릭터" />
+                <a
+                  href="./personal-statement/index.html"
+                  data-featherlight="iframe"
+                  >자기소개서.html</a
+                >
+              </div>
+            </header>
+            <section>
+              <article>
+                <h5>profile</h5>
+                <div><span>name</span>유채연</div>
+                <div><span>birth</span>2000.04.24</div>
+                <div><span>mobile</span>01012345678</div>
+                <div><span>email</span>채연@naver.com</div>
+              </article>
+              <article>
+                <h5>history</h5>
+                <div><span>2019</span>경복비즈니스고등학교</div>
+                <div><span>2021</span>숭의여자대학교 시각디자인</div>
+                <div><span>2021</span>이젠 컴퓨터 아카데미</div>
+                <div><span>2023 ~</span></div>
+              </article>
+              <article>
+                <h5>character</h5>
+                <div><span>MBTI</span>INFP</div>
+                <div><span>장점</span>솔직함과 많은 웃음</div>
+                <div><span></span>이해가 될 때까지</div>
+                <div><span></span>항상 긍정적인</div>
+                <div><span></span>강한 책임감, 꼼꼼한</div>
+                <div><span></span>좋아하는 것에 몰입을 잘 함</div>
+              </article>
+              <article>
+                <h5>hobby</h5>
+                <div>
+                  <span>물멍</span
+                  ><span>어항 속 물고기를 보며 생각을 정리하고 비우기</span>
+                </div>
+                <div>
+                  <span>독서</span
+                  ><span>자기개발, 소설에서 공감하고, 공감을 얻기</span>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+        <!-- ########## Skill ########## -->
+        <div class="lnb skillWrap">
+          <div class="skill">
+            <div class="btnChk">
+              <label for="aboutWrap" data-alt="aboutWrap">about me</label>
+              <label for="skillWrap" data-alt="skillWrap">skill</label>
+              <label for="portfolioWrap" data-alt="portfolioWrap"
+                >portfolio</label
+              >
+            </div>
+            <div class="skillInner">
+              <input type="radio" id="skillName01" name="skillBtn" checked />
+              <input type="radio" id="skillName02" name="skillBtn" />
+              <input type="radio" id="skillName03" name="skillBtn" />
+              <input type="radio" id="skillName04" name="skillBtn" />
+              <input type="radio" id="skillName05" name="skillBtn" />
+              <input type="radio" id="skillName06" name="skillBtn" />
+              <div class="skillBtn">
+                <label for="skillName01">Etc.</label>
+                <label for="skillName02">Navigation</label>
+                <label for="skillName03">Item List</label>
+                <label for="skillName04">Tab Contents</label>
+                <label for="skillName05">Accordion Contents</label>
+                <label for="skillName06">Form</label>
+              </div>
+              <div class="skill-items">
+                <div class="itemGroup" uk-lightbox="animation: slide">
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/Gradient Text/index.html"
+                      data-caption="텍스트 그라데이션"
+                    >
+                      <img
+                        src="img/practice_etc_gradientText.png"
+                        alt="Amorfati 텍스트 그라데이션"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/Outline Text/index.html"
+                      data-caption="Text Outline"
+                    >
+                      <img
+                        src="img/practice_etc_outlineText.png"
+                        alt="Portfolio 텍스트 아웃라인"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/font icon textshadodw/index.html"
+                      data-caption="텍스트 애니메이션"
+                    >
+                      <img
+                        src="img/practice_etc_textShadow.png"
+                        alt="텍스트 그림자 애니메이션"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/DoubleBorderradius/index.html"
+                      data-caption="Double Border Item"
+                    >
+                      <img
+                        src="img/practice_etc_doubleBorder.png"
+                        alt="Double borderradius"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/keyframe/radial_RoadingAnimation_index.html"
+                      data-caption="Radial Roading Animation"
+                    >
+                      <img
+                        src="img/practice_etc_radialLoadingAnimation.png"
+                        alt="로딩 애니메이션 원형ver"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/keyframe/square_RoadingAnimation_index.html"
+                      data-caption="Square Loading Animgation"
+                    >
+                      <img
+                        src="img/practice_etc_squareLoadingAnimation.png"
+                        alt="로딩 애니메이션 사각형ver"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/SNS ICON Animation/index.html"
+                      data-caption="SNS Icon Animation"
+                    >
+                      <img
+                        src="img/practice_etc_SNSAnimation.png"
+                        alt="SNS Icon"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/Table design/index.html"
+                      data-caption="Table Design"
+                    >
+                      <img
+                        src="img/practice_etc_tableDesign.png"
+                        alt="당사 직원 정보 표 디자인"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/Tooltip/index.html"
+                      data-caption="Hover Tooltip"
+                    >
+                      <img
+                        src="img/practice_etc_tooltip.png"
+                        alt="Tooltip 디자인"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/UI Layer Hover Effects/index.html"
+                      data-caption="Hover UI Layout"
+                    >
+                      <img
+                        src="img/practice_etc_UiLayout.png"
+                        alt="UI Layout"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/search modal/index.html"
+                      data-caption="Search Click Modal"
+                    >
+                      <img
+                        src="img/practice_etc_searchModal.png"
+                        alt="Search Modal"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/responsive animation modal/index.html"
+                      data-caption="responsive Modal"
+                    >
+                      <img
+                        src="img/practice_etc_responsiveModal.png"
+                        alt="반응형 뉴스레터 구독 모달 창"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/profile card(Dark Mode)/index.html"
+                      data-caption="Dark Mode Profile Card"
+                    >
+                      <img
+                        src="img/practice_etc_darkmodeProfile.png"
+                        alt="다크모드 유채연 프로필"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/star rating/index.html"
+                      data-caption="Star Rating"
+                    >
+                      <img src="img/practice_etc_star.png" alt="별점 주기" />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/checkbox Custom/index.html"
+                      data-caption="Checkbox Custom Design"
+                    >
+                      <img
+                        src="img/practice_etc_checkboxDesign.png"
+                        alt="체크박스 디자인"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/screen transition/index.html"
+                      data-caption="Screen Transition"
+                    >
+                      <img
+                        src="img/practice_etc_screenTransition.png"
+                        alt="화면 전환"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Etc/sound control/index.html"
+                      data-caption="Sound Control"
+                    >
+                      <img
+                        src="img/practice_etc_sound.png"
+                        alt="sound control"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="itemGroup" uk-lightbox="animation: slide">
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Navigation/background-image/index.html"
+                      data-caption="Hover_background-image"
+                    >
+                      <img
+                        src="img/practice_navigation_background.png"
+                        alt="hover하면 background-image변경 navigation"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Navigation/fullScreen/index.html"
+                      data-caption="Full Screen Navigation"
+                    >
+                      <img
+                        src="img/practice_navigation_fullScreen.png"
+                        alt="full screen Navigation"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Navigation/transparentNavigation/index.html"
+                      data-caption="Hover_transparent"
+                    >
+                      <img
+                        src="img/practice_navigation_transparent.png"
+                        alt="transparent Navigation bullet"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Navigation/dropdown/index.html"
+                      data-caption="Dropdown Navigation"
+                    >
+                      <img
+                        src="img/practice_navigation_dropdown.png"
+                        alt="dropdown Navigation"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Navigation/borderAnimation/index.html"
+                      data-caption="Hover_underline Navigation"
+                    >
+                      <img
+                        src="img/practice_navigation_border.png"
+                        alt="Hover_underline Animation"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Navigation/attrNavigation/index.html"
+                      data-caption="Hover_Navigation with data-attr"
+                    >
+                      <img
+                        src="img/practice_navigation_data-attr.png"
+                        alt="navigation effect"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Navigation/textNavigation/index.html"
+                      data-caption="Hover_Navigation with data-attr"
+                    >
+                      <img
+                        src="img/practice_navigation_data-attr02.png"
+                        alt="navigation effect"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Navigation/selectCustom/index.html"
+                      data-caption="Footer Select Navigation"
+                    >
+                      <img
+                        src="img/practice_navigation_footer.png"
+                        alt="select custom navigation"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="itemGroup" uk-lightbox="animation: slide">
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/ItemList/clip-path/index.html"
+                      data-caption="Clip-path item"
+                    >
+                      <img
+                        src="img/practice_itemList_clip-path.png"
+                        alt="clip-path List"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/ItemList/profileCardList/index.html"
+                      data-caption="Card List"
+                    >
+                      <img
+                        src="img/practice_itemList_profileCard.png"
+                        alt="profile card List"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/ItemList/responsive-itemList/index.html"
+                      data-caption="Responsive Item List"
+                    >
+                      <img
+                        src="img/practice_itemList_itemList.png"
+                        alt="responsive UI Item List"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/ItemList/gradientCardList/index.html"
+                      data-caption="Gradient Card List"
+                    >
+                      <img
+                        src="img/practice_itemList_gradientItemList.png"
+                        alt="Gradient Card List"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/ItemList/itemHoverEffect/index.html"
+                      data-caption="Hover Item Detail"
+                    >
+                      <img
+                        src="img/practice_itemList_itemEffect.png"
+                        alt="Hover Item's detail"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/ItemList/itemHoverDetail/index.html"
+                      data-caption="Hover Item Detail"
+                    >
+                      <img
+                        src="img/practice_itemList_itemDetail.png"
+                        alt="Hover Item's detail"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/ItemList/imgGallery/index.html"
+                      data-caption="Grid Responsive Image Gallery"
+                    >
+                      <img
+                        src="img/practice_itemList_imgGallery.png"
+                        alt="Grid Image Gallery"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/ItemList/itemList/index.html"
+                      data-caption="Best Item List"
+                    >
+                      <img
+                        src="img/practice_itemList_bestitemList.png"
+                        alt="Best Item List"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="itemGroup" uk-lightbox="animation: slide">
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/TabContents/fullScreen/index.html"
+                      data-caption="FullScreen Tab Contents 01"
+                    >
+                      <img
+                        src="img/practice_tab_fullscreen.png"
+                        alt="Halloween Full Screen Tab Contents 01"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/TabContents/search,tabMenu/index.html"
+                      data-caption="Tab Contents 02"
+                    >
+                      <img
+                        src="img/practice_tab_search.png"
+                        alt="search/Tab Contents 02"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/TabContents/target/index.html"
+                      data-caption="Tab Contents 03 with target가상선택자"
+                    >
+                      <img
+                        src="img/practice_tab_target.png"
+                        alt="Tab Contents 03 with target가상선택자"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/TabContents/characterIntro/index.html"
+                      data-caption="Tab Contents 04"
+                    >
+                      <img
+                        src="img/practice_tab_insideout.png"
+                        alt="인사이드아웃 캐릭터 소개 Tab Contents 04"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/TabContents/characterIntro2/index.html"
+                      data-caption="Tab contents 05"
+                    >
+                      <img
+                        src="img/practice_tab_elemental.png"
+                        alt="엘리멘탈 캐릭터 소개 Tab Cottents 05"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/TabContents/itemTabContents/index.html"
+                      data-caption="Tab contents 06"
+                    >
+                      <img
+                        src="img/practice_tab_itemVer3.png"
+                        alt="Tab Contents 06 3Type"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/TabContents/itemTabContents2/index.html"
+                      data-caption="Tab Contents 07"
+                    >
+                      <img
+                        src="img/practice_tab_slideVer2.png"
+                        alt="Tab Contents 07 2Type"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="itemGroup" uk-lightbox="animation: slide">
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/AccordionContents/netflix/index.html"
+                      data-caption="Netflix QnA Accordion 01"
+                    >
+                      <img
+                        src="img/practice_accordion_netflix.png"
+                        alt="Netflix QnA Accordion 01"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/AccordionContents/netflix02/index.html"
+                      data-caption="Netflix QnA jQuery Accordion 02"
+                    >
+                      <img
+                        src="img/practice_accordion_netflix2.png"
+                        alt="Netflix QnA jQuery Accordion 02"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/AccordionContents/Millie/index.html"
+                      data-caption="밀리의 서재 QnA Accordion 03"
+                    >
+                      <img
+                        src="img/practice_accordion_millie.png"
+                        alt="밀리의 서재 QnA Accordion 03"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/AccordionContents/Use-htmlTag/index.html"
+                      data-caption="Accordion 04 with HTML Tag"
+                    >
+                      <img
+                        src="img/practice_accordion_htmlTag.png"
+                        alt="Accordion 04 with HTML Tag"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/AccordionContents/img-Accordion/index.html"
+                      data-caption="Accordion 05"
+                    >
+                      <img
+                        src="img/practice_accordion_image.png"
+                        alt="Accordion 05"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/AccordionContents/with-flex/index.html"
+                      data-caption="imgGallery Accordion 06 with flex"
+                    >
+                      <img
+                        src="img/practice_accordion_imgGallery.png"
+                        alt="Movie Poster Gallery Accordion 06"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="itemGroup" uk-lightbox="animation: slide">
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Form/animationLogin/index.html"
+                      data-caption="유효성체크 & Animation Form 01"
+                    >
+                      <img
+                        src="img/practice_form_animation.png"
+                        alt="유효성체크 로그인 폼 Form 01"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Form/fullscreen/index.html"
+                      data-caption="Backscreen Full Screen Form 02"
+                    >
+                      <img
+                        src="img/practice_form_background.png"
+                        alt="Backscreen Full Screen Form 02"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Form/loginUIDesign/index.html"
+                      data-caption="Form 03"
+                    >
+                      <img src="img/practice_form_UIDesign.png" alt="Form 03" />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Form/naver/index.html"
+                      data-caption="Naver Form 04"
+                    >
+                      <img
+                        src="img/practice_form_naverLogin.png"
+                        alt="네이버 로그인 폼"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Form/FontAwesome/index.html"
+                      data-caption="Form 05"
+                    >
+                      <img
+                        src="img/practice_form_fontawesome.png"
+                        alt="fontawesome Design Form 05"
+                      />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Form/loginCustom/index.html"
+                      data-caption="Form 06"
+                    >
+                      <img src="img/practice_form_custom.png" alt="Form 06" />
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a
+                      class="uk-inline"
+                      href="./practice/Form/loginCustom02/index.html"
+                      data-caption="Form 07"
+                    >
+                      <img src="img/practice_form_custom02.png" alt="Form 07" />
+                    </a>
+                  </div>
+                </div>
+                <i class="xi-mouse"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ########## Portfolio ########## -->
+        <div class="lnb portfolioWrap">
+          <div class="portfolio">
+            <div class="btnChk">
+              <label for="aboutWrap" data-alt="aboutWrap">about me</label>
+              <label for="skillWrap" data-alt="skillWrap">skill</label>
+              <label for="portfolioWrap" data-alt="portfolioWrap"
+                >portfolio</label
+              >
+            </div>
+            <ul>
+              <li data-alt="pascucci" class="focus">
+                <div>
+                  <h3>pascucci</h3>
+                  <div class="tool">
+                    <span>#mobile</span>
+                    <span>#jQuery</span>
+                    <span>#scss</span>
+                    <span>#flex</span>
+                  </div>
+                </div>
+              </li>
+              <li data-alt="ikea">
+                <div>
+                  <h3>Ikea</h3>
+                  <div class="tool">
+                    <span>#html</span>
+                    <span>#css</span>
+                    <span>#Scss</span>
+                  </div>
+                </div>
+              </li>
+              <li data-alt="IkeaVer2">
+                <div>
+                  <h3>Ikea 2023</h3>
+                  <div class="tool">
+                    <span>#mobile</span>
+                    <span>#jQuery</span>
+                    <span>#flex</span>
+                    <span>#grid</span>
+                    <span>#float</span>
+                  </div>
+                </div>
+              </li>
+              <li data-alt="salady">
+                <div>
+                  <h3>salady</h3>
+                  <div class="tool">
+                    <span>#mobile</span>
+                    <span>#jQuery</span>
+                  </div>
+                </div>
+              </li>
+              <li data-alt="daylight">
+                <div>
+                  <h3>DaybyDaylight</h3>
+                  <div class="tool">
+                    <span>#mobile</span>
+                    <span>#jQuery</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="view">
+              <div class="project pascucci focus">
+                <div class="image">
+                  <div>
+                    <img
+                      src="img/portfolio_pascucci_fullscreen.png"
+                      alt="카페 파스쿠찌 리뉴얼 풀스크린"
+                    />
+                  </div>
+                </div>
+                <a
+                  href="https://chaeyeon-portfolio-cafepascucci.netlify.app"
+                  data-featherlight="iframe"
+                  >view more</a
+                >
+              </div>
+              <div class="project ikea">
+                <div class="image">
+                  <div>
+                    <img
+                      src="img/portfolio_ikea_fullscreen.png"
+                      alt="이케아 리뉴얼 홈페이지 풀스크린"
+                    />
+                  </div>
+                </div>
+                <a
+                  href="https://chaeyeon-portfolio-ikea.netlify.app"
+                  data-featherlight="iframe"
+                  >view more</a
+                >
+              </div>
+              <div class="project IkeaVer2">
+                <div class="image">
+                  <div>
+                    <img
+                      src="img/portfolio_ikea_fullscreen.png"
+                      alt="이케아 리뉴얼 홈페이지 풀스크린"
+                    />
+                  </div>
+                </div>
+                <a
+                  href="https://chaeyeon-portfolio-ikea.netlify.app"
+                  data-featherlight="iframe"
+                  >view more</a
+                >
+              </div>
+              <div class="project salady">
+                <div class="image">
+                  <div>
+                    <img
+                      src="img/portfolio_salady_fullscreen.png"
+                      alt="샐러디 홈페이지 풀스크린"
+                    />
+                  </div>
+                </div>
+                <a
+                  href="https://chaeyeon-portfolio-salady.netlify.app"
+                  data-featherlight="iframe"
+                  >view more</a
+                >
+              </div>
+              <div class="project daylight">
+                <div class="image">
+                  <div>
+                    <img
+                      src="img/portfolio_dbd_fullscreen.png"
+                      alt="데드바이데이라이트 게임 소개 페이지 풀스크린"
+                    />
+                  </div>
+                </div>
+                <a
+                  href="https://chaeyeon-portfolio-deadbydaylight.netlify.app"
+                  data-featherlight="iframe"
+                  >view more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ########## Notice-Modal ########## -->
+        <div class="notice">
+          <p>
+            해당 사이트는 개인 포트폴리오 목적으로 제작되었으며, 1300px 해상도에
+            최적화 되어 있습니다.
+            <br />특정 기능을 구현하기 위해, 해상도별 지원이 되지 않는 점을
+            알려드립니다. <br />현재 태블릿 및 모바일 해상도 제작 중입니다.
+          </p>
+          <i class="close">close</i>
+        </div>
+      </div>
+    </body>
+  </body>
 </html>
