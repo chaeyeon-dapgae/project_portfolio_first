@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #333;
+  line-height: 1.5em;
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.member {
+  width: 900px;
+  border-collapse: collapse;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.member caption {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: teal;
+}
+.member tr {
+  border-bottom: 1px solid #eee;
+  transition: 0.35s;
+}
+.member tr:last-child {
+  border-bottom: none;
+}
+.member th,
+.member td {
+  padding: 12px;
+  text-align: center;
+}
+.member tr th {
+  background: linear-gradient(0, #a1c4fd, #c2e9fb);
+  color: #fff;
+}
+.member tr th:first-child {
+  border-radius: 10px 0 0 0;
+}
+.member tr th:last-child {
+  border-radius: 0 10px 0 0;
+}
+.member tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+.member tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+.member tr td:last-child {
+  color: dodgerblue;
+}
+.member tr td:last-child {
+  color: dodgerblue;
+}
+/* .member tr:nth-child(2n+1) {
+  background-color: #f4f4f4;
+} */
+.member tr:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+.member tr:nth-child(even) {
+  background-color: #fff;
+}

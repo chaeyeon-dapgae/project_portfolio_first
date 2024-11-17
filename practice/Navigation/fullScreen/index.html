@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>풀스크린 네비게이션 반응형 포트폴리오 with jQuery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  <div class="toggle">
+    <i class="xi-plus-thin"></i>
+  </div>
+  <div class="overlay"></div>
+  <ul class="gnb">
+    <li><a href="#none">안녕하세요!</a></li>
+    <li><a href="#none">유채연입니다</a></li>
+    <li><a href="#none">꿈을 이루기 위해</a></li>
+    <li><a href="#none">끝까지 포기하지 않고</a></li>
+    <li><a href="#none">노력하는</a></li>
+    <li><a href="#none">퍼블리셔가 되겠습니다</a></li>
+  </ul>
+  <!-- jQuery -->
+  <script>
+    $('.toggle, .gnb li a').click(function(){
+      $('.toggle, .overlay, .gnb').toggleClass('active');
+    })
+  </script>
+</body>
+</html>
