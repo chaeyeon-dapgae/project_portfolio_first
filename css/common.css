@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@font-face {
+  font-family: "TTWanjudaedunsancheB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KCCMurukmuruk";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCMurukmuruk.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+  font-size: 18px;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none !important;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.btnClick {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  left: 102%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: inset 5px 3px 5px rgba(255, 255, 255, 0.6),
+    3px 5px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnClick.active i {
+  transform: rotateY(180deg);
+}
+.btnChk {
+  display: flex;
+}
+.btnChk label {
+  font-family: "KCCMurukmuruk";
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 0 10px;
+  width: 130px;
+  height: 50px;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 5px 3px 5px rgba(255, 255, 255, 0.6),
+    3px 5px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  transition: 0.5s;
+}
+input[id="aboutWrap"]:checked ~ .btnChk label[for="aboutWrap"],
+input[id="skillWrap"]:checked ~ .btnChk label[for="skillWrap"],
+input[id="portfolioWrap"]:checked ~ .btnChk label[for="portfolioWrap"] {
+  color: #fff;
+}
+.btnChk label:hover {
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.lnb {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  padding: 100px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  transition-property: opacity, left;
+  overflow: hidden;
+  display: none;
+  background-color: #102c57 !important;
+}
+.lnb.focus {
+  opacity: 1;
+  z-index: 100;
+  visibility: visible;
+  display: block;
+  overflow: visible;
+  display: block;
+}
+.aboutWrap.focus .btnChk label[for="aboutWrap"],
+.skillWrap.focus .btnChk label[for="skillWrap"],
+.portfolioWrap.focus .btnChk label[for="portfolioWrap"] {
+  color: #fff;
+}
+.lnb.active {
+  left: 0;
+}
+.lnb .btnChk {
+  width: 450px;
+  margin-left: auto;
+}
+.lnb .btnChk label {
+  margin-top: 0;
+  margin: 0 20px;
+  margin-right: 0;
+}
+.lnb:last-child .btnChk label {
+  box-shadow: inset 5px 3px 8px rgba(255, 255, 255, 0.2),
+    3px 5px 8px rgba(0, 0, 0, 0.2);
+}
